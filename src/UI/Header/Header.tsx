@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import * as styles from './header.module.css';
-// declare module "./header.module.css";
+import styles from './header.module.css';
+
 export default function Header() {
     return (
         <header className={styles.header}>
             <nav className={styles.navigation}>
                 <ul className={styles.listMenu}>
-                   <Link className={styles.LinkItem} to={"/"}><li className={styles.ListItem}>Home</li></Link>
                    <Link className={styles.LinkItem} to={"/about"}><li className={styles.ListItem}>About Us</li></Link>
                    <Link className={styles.LinkItem} to={"/aboutProject"}><li className={styles.ListItem}>Our Project</li></Link>
                    <Link className={styles.LinkItem} to={"/shop"}><li className={styles.ListItem}>Our Shop</li></Link>
