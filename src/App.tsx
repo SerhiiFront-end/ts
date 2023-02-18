@@ -1,6 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./components/pages/HomePage/HomePage";
+import Header from "./components/UI/Header/Header";
 import './index.css';
-import Header from "./UI/Header/Header";
+
+
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
         <BrowserRouter>
         <Header/>
             <Routes>
-              <Route path="/" element={<h1>h1</h1>}></Route>
+              <Route path="/" element={<HomePage/>}></Route>
               <Route path="/about" element={<h1>h1</h1>}></Route>
               <Route path="/aboutProject" element={<h1>h1</h1>}></Route>
               <Route path="/shop" element={<h1>h1</h1>}></Route>

@@ -4,3 +4,12 @@
     padding: 0;
     margin: 0;
 }
+.App {
+    margin: 0 auto;
+    max-width: 1536px;
+    background-color: #23233B;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
