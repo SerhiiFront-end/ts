@@ -2,6 +2,8 @@
 .header {
     justify-content: right;
     display: flex;
+    position: sticky;
+    top: 0;
     background: #1C1C33;
 }
 .navigation {

@@ -19,9 +19,19 @@
 }
 .containerTitle {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
+}
+.missionTitle {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
 }
 .involvedTitle {
     text-align: center;
+}
+.firstImageHomePage {
+    margin-top: 50px;
+    width: 100%;
+    opacity: 55%;
 }
