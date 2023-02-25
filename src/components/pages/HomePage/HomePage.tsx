@@ -1,12 +1,29 @@
 import { Link } from 'react-router-dom'
 import styles from './HomePage.module.css'
-import HowWeHelpImage from './HowWeHelp.webp'
 
 export default function HomePage() {
   return (
 	<div className={styles.HomePageContent}>
 		<h2 className={styles.missionTitle}>Our Mission: Cosmo CIC will put people on the life skills ladder through support, building confidence, integration, opportunities and connections, in Hull.</h2>
-		<img className={styles.firstImageHomePage} src={HowWeHelpImage} alt="How we help?" />
+		<div className={styles.firstImageHomePage}>
+			<h1 className={styles.involvedTitle}>How we help</h1>
+			<div className={styles.firstImageLists}>
+				<div className={styles.firstImageHomePageText}>
+					<ul className={styles.listOnFirstScreen}>
+						<li>Productive outdoor projects</li>
+						<li>Teaching and mentoring</li>
+						<li>Day-to-day assistance (finance, health etc.)</li>
+					</ul>
+				</div>
+				<div className={styles.firstImageHomePageText}>
+					<ul className={styles.listOnFirstScreen}>
+						<li>Productive outdoor projects</li>
+						<li>Teaching and mentoring</li>
+						<li>Day-to-day assistance (finance, health etc.)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<h1 className={styles.involvedTitle}>Get Involved</h1>
 		<h4 className={styles.involvedTitle}>Support our local community and have fun!</h4>
 		<div className={styles.containers}>

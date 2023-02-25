@@ -32,6 +32,21 @@
 }
 .firstImageHomePage {
     margin-top: 50px;
-    width: 100%;
-    opacity: 55%;
+    background: url('./HowWeHelp.webp') no-repeat;
+    background-size: 100%;
+    height: 320px;
+    padding: 15px;
+    justify-content: space-between;
+}
+.firstImageHomePageText {
+    margin: 20px auto;
+    width: 20%;
+    color: #FFF;
+    font-size: 18px;
+}
+.firstImageLists {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
 }
