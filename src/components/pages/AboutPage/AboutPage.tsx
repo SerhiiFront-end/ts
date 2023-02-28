@@ -1,13 +1,9 @@
 import Person from '../../UI/Persons/PersonDetails'
-import styles from './AboutPage.module.css'
 export default function AboutPage() {
   return (
     <div>
-        <h1 className={styles.AboutPageTextCenter}>Meet The Team</h1>
-        <Person/>
-        {/* <p className="text-3xl font-bold underline text-red-500">
-            Edit <code>src/App.js</code> and save to reload.
-        </p> */}
+        <h1 className='text-center text-slate-50 text-3xl mt-5'>Meet The Team</h1>
+        <Person name='Altynay Guney' date='From 2013'/>
     </div>
   )
 }
