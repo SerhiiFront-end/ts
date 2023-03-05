@@ -1,4 +1,4 @@
-import Person from "./Persons/PersonDetails"
+import Person from "../Persons/PersonDetails"
 export default function OurTeam() {
     const persons = [
         {name: 'Altynay Guney', date: "From 2013"},
