@@ -5,6 +5,7 @@
     position: sticky;
     top: 0;
     background: #1C1C33;
+    z-index: 100;
 }
 .navigation {
     margin: 25px 0;

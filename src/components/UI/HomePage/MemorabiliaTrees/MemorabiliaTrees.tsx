@@ -12,7 +12,7 @@ export default function MemorabiliaTrees() {
 				}}
 				className='pt-24'
 			>
-				<div className='bg-slate-400 p-3 w-2/5 ml-96'>
+				<div className='bg-slate-400 p-10 w-96 ml-96 text-black'>
 					<h1 className='text-3xl text-center'>
 						<b>Memorabilia Trees</b>
 					</h1>
@@ -23,7 +23,7 @@ export default function MemorabiliaTrees() {
 						Hull.
 					</p>
 					<Link to={"/treeProject"} className='text-center'>
-						<button className='bg-red-900 w-2/5 mt-5'>
+						<button className='bg-red-900 w-3/5 mt-5 block m-auto p-4 text-white'>
 							Take a look
 						</button>
 					</Link>

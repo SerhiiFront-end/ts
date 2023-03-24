@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import AboutPage from "./components/pages/AboutPage"
+import DonatePage from "./components/pages/DonatePage"
 import HomePage from "./components/pages/HomePage"
+import VolonteerForUs from "./components/pages/VolonteerForUs"
 import Footer from "./components/UI/Footer/Footer"
 import Header from "./components/UI/Header/Header"
 import "./index.css"
@@ -13,9 +15,13 @@ function App() {
 				<Routes>
 					<Route path='/' element={<HomePage />}></Route>
 					<Route path='/about' element={<AboutPage />}></Route>
+					<Route
+						path='/volunteer-for-us'
+						element={<VolonteerForUs />}
+					></Route>
 					<Route path='/aboutProject' element={<h1>h1</h1>}></Route>
 					<Route path='/help' element={<h1>h1</h1>}></Route>
-					<Route path='/donate' element={<h1>h1</h1>}></Route>
+					<Route path='/donate' element={<DonatePage />}></Route>
 					<Route path='/involved' element={<h1>h1</h1>}></Route>
 					<Route path='/contact' element={<h1>h1</h1>}></Route>
 				</Routes>
