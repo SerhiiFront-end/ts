@@ -7,10 +7,10 @@ export default function Partner(props: PartnerTypes) {
 				alt={props.companyName}
 				className='m-auto h-36'
 			/>
-			<h1 className='text-2xl tracking-wider uppercase'>
+			<h1 className='text-2xl tracking-wider uppercase mt-6'>
 				{props.companyName}
 			</h1>
-			<p>{props.description}</p>
+			<p className='w-2/3 m-auto mt-6'>{props.description}</p>
 		</div>
 	)
 }
