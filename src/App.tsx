@@ -28,7 +28,6 @@ function App() {
 					/>
 					<Route path='/sitemap' element={<SiteMap />} />
 					<Route path='/aboutProject' element={<h1>h1</h1>} />
-					<Route path='/help' element={<h1>h1</h1>} />
 					<Route path='/donate' element={<DonatePage />} />
 					<Route path='/involved' element={<h1>h1</h1>} />
 					<Route path='/contact' element={<h1>h1</h1>} />

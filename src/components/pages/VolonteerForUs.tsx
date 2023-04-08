@@ -17,6 +17,7 @@ export default function VolonteerForUs() {
 			.post("http://localhost:3001/api/feedback", personData)
 			.then((response) => {
 				setPersonData(clearData)
+				alert("You have successfully submitted a ticket to the server.")
 			})
 			.catch((error) => {
 				alert(
