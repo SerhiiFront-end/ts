@@ -16,10 +16,12 @@ export default function VolonteerForUs() {
 		axios
 			.post("http://localhost:3001/api/feedback", personData)
 			.then((response) => {
-				console.log("Успех")
+				setPersonData(clearData)
 			})
 			.catch((error) => {
-				console.error(error)
+				alert(
+					"An error occurred while submitting the form to the server."
+				)
 			})
 	}
 	return (
@@ -38,7 +40,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your first name'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.name}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -50,7 +52,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your last name'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.surname}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -62,7 +64,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your email'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.email}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -74,7 +76,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your number'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.telephone}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -86,7 +88,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your adress'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.adress}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -98,7 +100,7 @@ export default function VolonteerForUs() {
 				<input
 					type='text'
 					placeholder='Your age'
-					className='outline-none p-4'
+					className='outline-none p-4 w-1/2'
 					value={personData.age}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -109,7 +111,7 @@ export default function VolonteerForUs() {
 				/>
 				<textarea
 					placeholder='Tell us a bit about yourself'
-					className='outline-none p-4'
+					className='outline-none p-4 w-full'
 					value={personData.description}
 					onChange={(e) =>
 						setPersonData((prev) => ({
@@ -118,7 +120,12 @@ export default function VolonteerForUs() {
 						}))
 					}
 				/>
-				<button onClick={(e) => sendEmail(e)}>aa</button>
+				<button
+					onClick={(e) => sendEmail(e)}
+					className='block m-auto bg-blue-300 w-full py-5'
+				>
+					Send
+				</button>
 			</form>
 		</div>
 	)

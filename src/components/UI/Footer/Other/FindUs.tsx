@@ -7,7 +7,14 @@ export default function FindUs() {
 			<p>Walker Street</p>
 			<p>HU3 1RA</p>
 			<p>+44 (0)7850 922000</p>
-			<p>cosmo.solutions.2013@gmail.com</p>
+			<p>
+				<a
+					href='mailto:cosmo.solutions.2013@gmail.com'
+					className='underline'
+				>
+					cosmo.solutions.2013@gmail.com
+				</a>
+			</p>
 		</div>
 	)
 }
